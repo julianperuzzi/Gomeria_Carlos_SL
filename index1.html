@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Gs6ZGj7Iub8xx+Pe2msHTZbRYj2M2y8S5Mnkv0xnLzeo7Pr8sbC6+dVlC2Lj1TyaA34QOJ2YdC5eDFGn5wtaQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/6883254_tire_wheel_icon.png">
+    <title>Gomería Carlos Santa Lucia</title>
+</head>
+<body>
+    <!-- COMIENZO DE LA PÁGINA -->
+
+    <header>
+        <!-- NAVBAR DE PAGINA -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/6883254_tire_wheel_icon.png" alt="Logo" width="auto" height="30" class="d-inline-block align-text-top"> Gomería Carlos
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#direccion">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#horarios">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--  referencia jQuery, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            function smoothScroll(target) {
+                const navbarHeight = $('.navbar').height();
+                const targetOffset = $(target).offset().top - navbarHeight;
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 500);
+            }
+        </script>
+
+        <!-- BANNER DE PAGINA -->
+        <img class="img-header" src="img/what-do-numbers-on-a-tire-mean.png" style="margin-top: 50px;">
+
+    </header>
+
+    <main>
+        <!-- INTRODUCCION -->
+        <div class="container mt-5" >
+            <h1>Gomería Carlos Santa Lucia</h1>
+            <p id="intro">Bienvenidos a Gomería Carlos, donde ofrecemos servicios profesionales de neumáticos y reparaciones para su vehículo.</p>
+        </div>
+
+        <!-- SERVICIOS Y PRODUCTOS -->
+        <div class="container p-4" style="font-weight: bold;font-size: medium;">
+            <div id="servicios">
+                <h2>Nuestros Servicios</h2>
+                <p>En Gomería Carlos, ofrecemos una amplia gama de servicios para mantener sus neumáticos y vehículo en perfectas condiciones.</p>
+                <ul>
+                    <li>
+                        <label>Reparación de Pinchaduras</label>
+                    </li>
+                    <li>
+                        <label>Calibración de Naumaticos</label>  
+                    </li>
+                    <li>
+                        <label>-------agragar mas servicios-------</label>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container p-4 pt-0" style="font-weight: bold;font-size: medium;">
+            <div id="productos">
+                <h2>Productos</h2>
+                <p>Contamos con una selección de productos de alta calidad para neumáticos y accesorios automotrices.</p>
+                <ul>
+                    <li>
+                        <label>Cubiertas en todas las medidas</label>
+                    </li>
+                    <li>
+                        <label>Camaras para Neumaticos</label>  
+                    </li>
+                    <li>
+                        <label>-------agragar mas productos-------</label>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- HORARIOS -->
+         <div class="container p-4 pt-0" style="font-weight: bold;font-size: medium;">
+             <div id="horarios">
+                  <h2>Horarios</h2>
+                 <ul>
+                       <li>Lunes a Sábados  </li>
+                      <ul>
+                           <li>Mañana: 9:00hs a 14:00hs</li>
+                        <li>Tarde: 17:00hs a 21:00hs</li>
+                     </ul>
+                  </ul>
+                    <!-- Puedes agregar más información sobre los horarios y días festivos -->
+             </div>
+         </div>
+
+        <!-- DIRECCIÓN CON MAPA -->
+        <div class="container p-4 pt-0 " style="font-weight: bold;font-size: medium;">
+            <div id="direccion">
+                <h2>Dirección</h2>
+                <p>Colon Nte. y Lima Este - 1292 Colón Nte. Santa Lucía, San Juan</p>
+                <!-- Puedes incluir aquí más información sobre la ubicación y cómo llegar -->
+            </div>
+            <div class="mt-4">
+                <!-- Aquí puedes agregar el mapa de Google con la ubicación de tu gomería -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1096.3615937733828!2d-68.49663819219137!3d-31.51781107964163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMxJzA0LjYiUyA2OMKwMjknNDUuNyJX!5e0!3m2!1ses!2sar!4v1690596007015!5m2!1ses!2sar" width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+   
+
+        <!-- CONTACTO -->
+        <div class="container p-4 pt-0" style="font-weight: bold;font-size: medium;">
+            <div id="contacto">
+                <h2>Contacto</h2>
+
+                <p>Para consultas y citas, comuníquese con nosotros:</p>
+                <ul>
+                    <li>Teléfono: </li>
+                    <li>---añadir link de WhatsApp</li>
+                </ul>
+                <!-- Aquí puedes agregar un formulario de contacto o más detalles sobre cómo contactar con tu gomería -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer de Pagina -->
+    <footer style="background: linear-gradient(180deg,#424242, #777777 100%);; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
+
+        © Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff;">www.linkedin.com/in/julianperuzzi</a>
+
+    </footer>
+
+    <!-- FIN DE LA PÁGINA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <!-- Botón flotante de WhatsApp -->
+<div class="whatsapp-button">
+    <a href="https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO" target="_blank">
+        <img src="img/3225179_app_logo_media_popular_social_icon.png" alt="WhatsApp">
+    </a>
+</div>
+
+</body>
+</html>

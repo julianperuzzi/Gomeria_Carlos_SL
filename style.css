@@ -1,0 +1,187 @@
+/* DISEÑO DE CUERPO DE PAGINA */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background: linear-gradient(180deg, #000 0%, #424242 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA DE NAVEGACION */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  transition: transform 0.3s ease;
+}
+
+
+/* Estilo para el botón cuando está abierto */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+header {
+    width: 100%; 
+    overflow: hidden; 
+    background-color: #000000;
+    padding: initial;
+}
+
+
+/* HEADER IMAGEN */
+.img-header {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+
+}
+
+/*TEXTO DE INTRODUCCION  */
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+#intro {
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 10px;
+}
+
+h2{
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: #FFF solid 1px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+h5 {
+    color: white;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cont-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 49.48%, rgb(255, 255, 255) 100%);
+    
+}
+
+@keyframes floatButtonAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  animation: floatButtonAnimation 2s ease infinite;
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* SECCION RESPONSIVE */
+
+@media (max-width: 575.98px) {
+    
+    body {
+      font-size: 14px;
+    }
+
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    
+    body {
+      font-size: 15px;
+    }
+  
+
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      font-size: 16px;
+    }
+    
+
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
+ 
+    .navbar{
+      font-size: 12px;
+
+    }
+  }
+
+  @media (min-width: 992px) {
+    body {
+      font-size: 18px;
+    } 
+    .navbar{
+      font-size: 12px;
+
+    }
+    header{
+      padding: 0px 100px 0px 100px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    } 
+    header{
+      padding: 0px 200px 0px 200px;
+    }
+    .navbar{
+      font-size: 12px;
+
+    }
+
+  }
